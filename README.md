@@ -1,5 +1,8 @@
 Copyright Accelit.
 
+Youtube Trailer:
+https://www.youtube.com/watch?v=p7hLex6F1ag
+
 I. Introduction
 Omega is a 6 months game engine project made during the end of our studies.
 It is written by Victor JORE and Thibaut PONCHON between January 2020 and June 2020.
