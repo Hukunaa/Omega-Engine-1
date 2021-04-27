@@ -9,19 +9,8 @@ Obviously this game engine is able to do classic rendering with the rasterizatio
 
 It uses our own math library, assimp, irrklang, PhysX, stb_image, GLFW.
 
-II. Releases note
-- Rasterizer
-	ECS can now add entities into the scene with components. All components are not done yet but can be easily added in the future thanks to a flexible ECS architecture.
-	Rasterizer pipeline can use texture and move objects over time, and create buffers and texture when needed. Some functionnality are in testing as removing and adding entities in run-time.
-- Raytracing
-	Object scene architecture has to change accordingly with the ECS texture. UV's and texture are correctly loaded, instance rendering implemented and optimized. Random undraw models issue is now fixed.
-	Fix some important issues with vulkan api (leaks and crashes).
-- Core
-	InputManager started to be implemented.
-	ResourceManager can now handle textures. 
-- Dependencies
-	Vulkan upgraded to 1.2.135.0, previous was 1.1.130.0.
-	GLFW updated to 3.3.2, previous was 3.3.1.
-
-Also, be aware of the needed models and textures inside the ain.cpp which may cause a crash if not in the Resources folders. You can use your owns.
+Also, be aware of the needed models and textures inside the main.cpp which may cause a crash if not in the Resources folders. You can use your owns.
 glm is not added in dependencies but is needed for raytracing. Please add it manually for now since it will be removed lately.
+![Capture d’écran 2021-04-27 191349](https://user-images.githubusercontent.com/44799583/116284157-0b7e8380-a78d-11eb-939c-046463d0497e.png)
+![Capture d’écran 2021-04-27 191309](https://user-images.githubusercontent.com/44799583/116284160-0c171a00-a78d-11eb-90d7-a6fa25621c4f.png)
+![Capture d’écran 2021-04-27 191337](https://user-images.githubusercontent.com/44799583/116284162-0cafb080-a78d-11eb-9d3c-dd917c2a0e35.png)
